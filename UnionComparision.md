@@ -45,6 +45,10 @@
 - Both files have similar linter errors related to missing module declarations.
 - The `efv2Union.d.ts` has an additional error regarding the `BufferEncoding` type.
 
+## 7. Interface Naming Convention
+
+- The `efv2Union.d.ts` file contains several interfaces with `_x` suffixes (e.g., `GetOptions_10`, `GetOptions_2`), which are not present in the `autorestUnion.d.ts` file.
+
 ## Summary of Key Differences
 
 - **Structure**: The `efv2Union.d.ts` file has a more complex structure with additional client classes and utility functions.
