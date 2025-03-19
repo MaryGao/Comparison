@@ -1,0 +1,695 @@
+## Summary of Comparison
+
+### Coverage Results
+
+The coverage % should be all `passed` cases / total cases.
+
+- **Autorest**: 82%
+- **EFV2**: 71%
+
+### Total Results
+
+All test cases listed by coverage files.
+
+- **Total Cases**: 666 test cases
+
+### Same Results
+
+- **Total Same Results**: 426 test cases
+  - **Pass**: 390 test cases
+  - **Not Implemented**: 36 test cases
+
+### Different Results
+
+- **Total Different Results**: 240 test cases
+  - **Not Implemented in `autorest.json` only**: 84 test cases, mainly in additional properties and visibility etc.
+  - **Not Implemented in `efv2.json` only**: 156 test cases, mainly in url template, property optionality, property value type etc.
+
+## Comparison of Results
+
+- **Routes_InInterface**: Both pass
+- **Routes_fixed**: Both pass
+- **Routes_PathParameters_templateOnly**: Both pass
+- **Routes_PathParameters_explicit**: Both pass
+- **Routes_PathParameters_annotationOnly**: Both pass
+- **Routes_PathParameters_ReservedExpansion_template**: Both pass
+- **Routes_PathParameters_ReservedExpansion_annotation**: Both pass
+- **Routes_PathParameters_SimpleExpansion_Standard_primitive**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_SimpleExpansion_Standard_array**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_SimpleExpansion_Standard_record**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_SimpleExpansion_Explode_primitive**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_SimpleExpansion_Explode_array**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_SimpleExpansion_Explode_record**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_PathExpansion_Standard_primitive**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_PathExpansion_Standard_array**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_PathExpansion_Standard_record**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_PathExpansion_Explode_primitive**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_PathExpansion_Explode_array**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_PathExpansion_Explode_record**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_LabelExpansion_Standard_primitive**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_LabelExpansion_Standard_array**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_LabelExpansion_Standard_record**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_LabelExpansion_Explode_primitive**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_LabelExpansion_Explode_array**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_LabelExpansion_Explode_record**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_MatrixExpansion_Standard_primitive**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_MatrixExpansion_Standard_array**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_MatrixExpansion_Standard_record**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_MatrixExpansion_Explode_primitive**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_MatrixExpansion_Explode_array**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_PathParameters_MatrixExpansion_Explode_record**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_QueryParameters_templateOnly**: Both pass
+- **Routes_QueryParameters_explicit**: Both pass
+- **Routes_QueryParameters_annotationOnly**: Both pass
+- **Routes_QueryParameters_QueryExpansion_Standard_primitive**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_QueryParameters_QueryExpansion_Standard_array**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_QueryParameters_QueryExpansion_Standard_record**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_QueryParameters_QueryExpansion_Explode_primitive**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_QueryParameters_QueryExpansion_Explode_array**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_QueryParameters_QueryExpansion_Explode_record**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_QueryParameters_QueryContinuation_Standard_primitive**: Both pass
+- **Routes_QueryParameters_QueryContinuation_Standard_array**: Both pass
+- **Routes_QueryParameters_QueryContinuation_Standard_record**: Both pass
+- **Routes_QueryParameters_QueryContinuation_Explode_primitive**: `autorest.json` pass, `efv2.json` not-implemented
+- **Routes_QueryParameters_QueryContinuation_Explode_array**: Both pass
+- **Routes_QueryParameters_QueryContinuation_Explode_record**: Both pass
+- **SpecialWords_ModelProperties_sameAsModel**: Both pass
+- **SpecialWords_Models_and**: Both pass
+- **SpecialWords_Models_as**: Both pass
+- **SpecialWords_Models_assert**: Both pass
+- **SpecialWords_Models_async**: Both pass
+- **SpecialWords_Models_await**: Both pass
+- **SpecialWords_Models_break**: Both pass
+- **SpecialWords_Models_class**: Both pass
+- **SpecialWords_Models_constructor**: Both pass
+- **SpecialWords_Models_continue**: Both pass
+- **SpecialWords_Models_def**: Both pass
+- **SpecialWords_Models_del**: Both pass
+- **SpecialWords_Models_elif**: Both pass
+- **SpecialWords_Models_else**: Both pass
+- **SpecialWords_Models_except**: Both pass
+- **SpecialWords_Models_exec**: Both pass
+- **SpecialWords_Models_finally**: Both pass
+- **SpecialWords_Models_for**: Both pass
+- **SpecialWords_Models_from**: Both pass
+- **SpecialWords_Models_global**: Both pass
+- **SpecialWords_Models_if**: Both pass
+- **SpecialWords_Models_import**: Both pass
+- **SpecialWords_Models_in**: Both pass
+- **SpecialWords_Models_is**: Both pass
+- **SpecialWords_Models_lambda**: Both pass
+- **SpecialWords_Models_not**: Both pass
+- **SpecialWords_Models_or**: Both pass
+- **SpecialWords_Models_pass**: Both pass
+- **SpecialWords_Models_raise**: Both pass
+- **SpecialWords_Models_return**: Both pass
+- **SpecialWords_Models_try**: Both pass
+- **SpecialWords_Models_while**: Both pass
+- **SpecialWords_Models_with**: Both pass
+- **SpecialWords_Models_yield**: Both pass
+- **SpecialWords_Operations_and**: Both pass
+- **SpecialWords_Operations_as**: Both pass
+- **SpecialWords_Operations_assert**: Both pass
+- **SpecialWords_Operations_async**: Both pass
+- **SpecialWords_Operations_await**: Both pass
+- **SpecialWords_Operations_break**: Both pass
+- **SpecialWords_Operations_class**: Both pass
+- **SpecialWords_Operations_constructor**: Both pass
+- **SpecialWords_Operations_continue**: Both pass
+- **SpecialWords_Operations_def**: Both pass
+- **SpecialWords_Operations_del**: Both pass
+- **SpecialWords_Operations_elif**: Both pass
+- **SpecialWords_Operations_else**: Both pass
+- **SpecialWords_Operations_except**: Both pass
+- **SpecialWords_Operations_exec**: Both pass
+- **SpecialWords_Operations_finally**: Both pass
+- **SpecialWords_Operations_for**: Both pass
+- **SpecialWords_Operations_from**: Both pass
+- **SpecialWords_Operations_global**: Both pass
+- **SpecialWords_Operations_if**: Both pass
+- **SpecialWords_Operations_import**: Both pass
+- **SpecialWords_Operations_in**: Both pass
+- **SpecialWords_Operations_is**: Both pass
+- **SpecialWords_Operations_lambda**: Both pass
+- **SpecialWords_Operations_not**: Both pass
+- **SpecialWords_Operations_or**: Both pass
+- **SpecialWords_Operations_pass**: Both pass
+- **SpecialWords_Operations_raise**: Both pass
+- **SpecialWords_Operations_return**: Both pass
+- **SpecialWords_Operations_try**: Both pass
+- **SpecialWords_Operations_while**: Both pass
+- **SpecialWords_Operations_with**: Both pass
+- **SpecialWords_Operations_yield**: Both pass
+- **SpecialWords_Parameters_and**: Both pass
+- **SpecialWords_Parameters_as**: Both pass
+- **SpecialWords_Parameters_assert**: Both pass
+- **SpecialWords_Parameters_async**: Both pass
+- **SpecialWords_Parameters_await**: Both pass
+- **SpecialWords_Parameters_break**: Both pass
+- **SpecialWords_Parameters_class**: Both pass
+- **SpecialWords_Parameters_constructor**: Both pass
+- **SpecialWords_Parameters_continue**: Both pass
+- **SpecialWords_Parameters_def**: Both pass
+- **SpecialWords_Parameters_del**: Both pass
+- **SpecialWords_Parameters_elif**: Both pass
+- **SpecialWords_Parameters_else**: Both pass
+- **SpecialWords_Parameters_except**: Both pass
+- **SpecialWords_Parameters_exec**: Both pass
+- **SpecialWords_Parameters_finally**: Both pass
+- **SpecialWords_Parameters_for**: Both pass
+- **SpecialWords_Parameters_from**: Both pass
+- **SpecialWords_Parameters_global**: Both pass
+- **SpecialWords_Parameters_if**: Both pass
+- **SpecialWords_Parameters_import**: Both pass
+- **SpecialWords_Parameters_in**: Both pass
+- **SpecialWords_Parameters_is**: Both pass
+- **SpecialWords_Parameters_lambda**: Both pass
+- **SpecialWords_Parameters_not**: Both pass
+- **SpecialWords_Parameters_or**: Both pass
+- **SpecialWords_Parameters_pass**: Both pass
+- **SpecialWords_Parameters_raise**: Both pass
+- **SpecialWords_Parameters_return**: Both pass
+- **SpecialWords_Parameters_try**: Both pass
+- **SpecialWords_Parameters_while**: Both pass
+- **SpecialWords_Parameters_with**: Both pass
+- **SpecialWords_Parameters_yield**: Both pass
+- **SpecialWords_Parameters_cancellationToken**: Both pass
+- **Authentication_ApiKey_invalid**: `autorest.json` pass, `efv2.json` not-implemented
+- **Authentication_ApiKey_valid**: Both pass
+- **Authentication_OAuth2_valid**: `autorest.json` pass, `efv2.json` not-implemented
+- **Authentication_OAuth2_invalid**: `autorest.json` pass, `efv2.json` not-implemented
+- **Authentication_Union_validKey**: Both pass
+- **Authentication_Union_validToken**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Bytes_Query_default**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Bytes_Query_base64**: Both pass
+- **Encode_Bytes_Query_base64url**: Both pass
+- **Encode_Bytes_Query_base64urlArray**: Both pass
+- **Encode_Bytes_Property_default**: Both pass
+- **Encode_Bytes_Property_base64**: Both pass
+- **Encode_Bytes_Property_base64url**: Both pass
+- **Encode_Bytes_Property_base64urlArray**: Both pass
+- **Encode_Bytes_Header_default**: Both pass
+- **Encode_Bytes_Header_base64**: Both pass
+- **Encode_Bytes_Header_base64url**: Both pass
+- **Encode_Bytes_Header_base64urlArray**: Both pass
+- **Encode_Bytes_RequestBody_default**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Bytes_RequestBody_base64**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Bytes_RequestBody_base64url**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Bytes_RequestBody_customContentType**: Both pass
+- **Encode_Bytes_RequestBody_octetStream**: Both pass
+- **Encode_Bytes_ResponseBody_default**: Both pass
+- **Encode_Bytes_ResponseBody_base64**: Both pass
+- **Encode_Bytes_ResponseBody_base64url**: Both pass
+- **Encode_Bytes_ResponseBody_customContentType**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Bytes_ResponseBody_octetStream**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Datetime_Query_default**: Both pass
+- **Encode_Datetime_Query_rfc3339**: Both pass
+- **Encode_Datetime_Query_rfc7231**: Both pass
+- **Encode_Datetime_Query_unixTimestamp**: Both pass
+- **Encode_Datetime_Query_unixTimestampArray**: Both pass
+- **Encode_Datetime_Property_default**: Both pass
+- **Encode_Datetime_Property_rfc3339**: Both pass
+- **Encode_Datetime_Property_rfc7231**: Both pass
+- **Encode_Datetime_Property_unixTimestamp**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Datetime_Property_unixTimestampArray**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Datetime_Header_default**: Both pass
+- **Encode_Datetime_Header_rfc3339**: Both pass
+- **Encode_Datetime_Header_rfc7231**: Both pass
+- **Encode_Datetime_Header_unixTimestamp**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Datetime_Header_unixTimestampArray**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Datetime_ResponseHeader_default**: Both pass
+- **Encode_Datetime_ResponseHeader_rfc3339**: Both pass
+- **Encode_Datetime_ResponseHeader_rfc7231**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Datetime_ResponseHeader_unixTimestamp**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Numeric_Property_safeintAsString**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Numeric_Property_uint32AsStringOptional**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Numeric_Property_uint8AsString**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Duration_Property_default**: Both pass
+- **Encode_Duration_Property_floatSeconds**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Duration_Property_float64Seconds**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Duration_Property_int32Seconds**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Duration_Property_iso8601**: Both pass
+- **Encode_Duration_Property_floatSecondsArray**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Duration_Query_default**: Both pass
+- **Encode_Duration_Query_iso8601**: Both pass
+- **Encode_Duration_Query_int32Seconds**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Duration_Query_int32SecondsArray**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Duration_Query_floatSeconds**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Duration_Query_float64Seconds**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Duration_Header_default**: Both pass
+- **Encode_Duration_Header_iso8601**: Both pass
+- **Encode_Duration_Header_int32Seconds**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Duration_Header_floatSeconds**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Duration_Header_float64Seconds**: `autorest.json` pass, `efv2.json` not-implemented
+- **Encode_Duration_Header_iso8601Array**: Both pass
+- **Parameters_Basic_ExplicitBody_simple**: Both pass
+- **Parameters_Basic_ImplicitBody_simple**: Both pass
+- **Parameters_BodyOptionality_requiredExplicit**: Both pass
+- **Parameters_BodyOptionality_OptionalExplicit**: Both pass
+- **Parameters_BodyOptionality_requiredImplicit**: Both pass
+- **Parameters_CollectionFormat_Query_multi**: Both pass
+- **Parameters_CollectionFormat_Query_csv**: Both pass
+- **Parameters_CollectionFormat_Query_ssv**: `autorest.json` pass, `efv2.json` not-implemented
+- **Parameters_CollectionFormat_Query_tsv**: `autorest.json` pass, `efv2.json` not-implemented
+- **Parameters_CollectionFormat_Query_pipes**: `autorest.json` pass, `efv2.json` not-implemented
+- **Parameters_CollectionFormat_Header_csv**: Both pass
+- **Parameters_Spread_Model_spreadAsRequestBody**: Both pass
+- **Parameters_Spread_Model_spreadCompositeRequestOnlyWithBody**: Both pass
+- **Parameters_Spread_Model_spreadCompositeRequestWithoutBody**: Both pass
+- **Parameters_Spread_Model_spreadCompositeRequest**: Both pass
+- **Parameters_Spread_Model_spreadCompositeRequestMix**: Both pass
+- **Parameters_Spread_Alias_spreadAsRequestBody**: Both pass
+- **Parameters_Spread_Alias_spreadAsRequestParameter**: Both pass
+- **Parameters_Spread_Alias_spreadWithMultipleParameters**: Both pass
+- **Parameters_Spread_Alias_spreadParameterWithInnerModel**: Both pass
+- **Parameters_Spread_Alias_spreadParameterWithInnerAlias**: Both pass
+- **Payload_ContentNegotiation_SameBody**: `autorest.json` pass, `efv2.json` not-implemented
+- **Payload_ContentNegotiation_DifferentBody**: `autorest.json` pass, `efv2.json` not-implemented
+- **Payload_JsonMergePatch_createResource**: `autorest.json` not-implemented, `efv2.json` pass
+- **Payload_JsonMergePatch_updateResource**: `autorest.json` not-implemented, `efv2.json` pass
+- **Payload_JsonMergePatch_updateOptionalResource**: Both not-implemented
+- **Payload_MediaType_StringBody_sendAsText**: `autorest.json` pass, `efv2.json` not-implemented
+- **Payload_MediaType_StringBody_getAsText**: `autorest.json` pass, `efv2.json` not-implemented
+- **Payload_MediaType_StringBody_sendAsJson**: Both pass
+- **Payload_MediaType_StringBody_getAsJson**: Both pass
+- **Payload_MultiPart_FormData_basic**: `autorest.json` pass, `efv2.json` not-implemented
+- **Payload_MultiPart_FormData_fileArrayAndBasic**: `autorest.json` pass, `efv2.json` not-implemented
+- **Payload_MultiPart_FormData_jsonPart**: `autorest.json` pass, `efv2.json` not-implemented
+- **Payload_MultiPart_FormData_binaryArrayParts**: `autorest.json` pass, `efv2.json` not-implemented
+- **Payload_MultiPart_FormData_multiBinaryParts**: `autorest.json` pass, `efv2.json` not-implemented
+- **Payload_MultiPart_FormData_checkFileNameAndContentType**: `autorest.json` pass, `efv2.json` not-implemented
+- **Payload_MultiPart_FormData_anonymousModel**: Both not-implemented
+- **Payload_MultiPart_FormData_HttpParts_ContentType_imageJpegContentType**: Both pass
+- **Payload_MultiPart_FormData_HttpParts_ContentType_requiredContentType**: Both pass
+- **Payload_MultiPart_FormData_HttpParts_ContentType_optionalContentType**: Both pass
+- **Payload_MultiPart_FormData_HttpParts_jsonArrayAndFileArray**: Both pass
+- **Payload_MultiPart_FormData_HttpParts_NonString_float**: `autorest.json` not-implemented, `efv2.json` pass
+- **Payload_Pageable_ServerDrivenPagination_link**: `autorest.json` pass, `efv2.json` not-implemented
+- **Payload_Pageable_ServerDrivenPagination_ContinuationToken_requestQueryResponseBody**: Both not-implemented
+- **Payload_Pageable_ServerDrivenPagination_ContinuationToken_requestHeaderResponseBody**: Both not-implemented
+- **Payload_Pageable_ServerDrivenPagination_ContinuationToken_requestQueryResponseHeader**: Both not-implemented
+- **Payload_Pageable_ServerDrivenPagination_ContinuationToken_requestHeaderResponseHeader**: Both not-implemented
+- **Payload_Xml_SimpleModelValue_get**: Both not-implemented
+- **Payload_Xml_SimpleModelValue_put**: Both not-implemented
+- **Payload_Xml_ModelWithSimpleArraysValue_get**: Both not-implemented
+- **Payload_Xml_ModelWithSimpleArraysValue_put**: Both not-implemented
+- **Payload_Xml_ModelWithArrayOfModelValue_get**: Both not-implemented
+- **Payload_Xml_ModelWithArrayOfModelValue_put**: Both not-implemented
+- **Payload_Xml_ModelWithOptionalFieldValue_get**: Both not-implemented
+- **Payload_Xml_ModelWithOptionalFieldValue_put**: Both not-implemented
+- **Payload_Xml_ModelWithAttributesValue_get**: Both not-implemented
+- **Payload_Xml_ModelWithAttributesValue_put**: Both not-implemented
+- **Payload_Xml_ModelWithUnwrappedArrayValue_get**: Both not-implemented
+- **Payload_Xml_ModelWithUnwrappedArrayValue_put**: Both not-implemented
+- **Payload_Xml_ModelWithRenamedArraysValue_get**: Both not-implemented
+- **Payload_Xml_ModelWithRenamedArraysValue_put**: Both not-implemented
+- **Payload_Xml_ModelWithRenamedFieldsValue_get**: Both not-implemented
+- **Payload_Xml_ModelWithRenamedFieldsValue_put**: Both not-implemented
+- **Payload_Xml_ModelWithEmptyArrayValue_get**: Both not-implemented
+- **Payload_Xml_ModelWithEmptyArrayValue_put**: Both not-implemented
+- **Payload_Xml_ModelWithTextValue_get**: Both not-implemented
+- **Payload_Xml_ModelWithTextValue_put**: Both not-implemented
+- **Payload_Xml_ModelWithDictionaryValue_get**: Both not-implemented
+- **Payload_Xml_ModelWithDictionaryValue_put**: Both not-implemented
+- **Payload_Xml_ModelWithEncodedNamesValue_get**: Both not-implemented
+- **Payload_Xml_ModelWithEncodedNamesValue_put**: Both not-implemented
+- **Response_StatusCodeRange_errorResponseStatusCodeInRange**: Both not-implemented
+- **Response_StatusCodeRange_errorResponseStatusCode404**: Both not-implemented
+- **SpecialHeaders_ConditionalRequest_postIfUnmodifiedSince**: `autorest.json` not-implemented, `efv2.json` pass
+- **SpecialHeaders_ConditionalRequest_headIfModifiedSince**: `autorest.json` not-implemented, `efv2.json` pass
+- **SpecialHeaders_ConditionalRequest_postIfMatch**: Both not-implemented
+- **SpecialHeaders_ConditionalRequest_postIfNoneMatch**: Both not-implemented
+- **SpecialHeaders_Repeatability_immediateSuccess**: Both pass
+- **Streaming_Jsonl_Basic_send**: Both not-implemented
+- **Streaming_Jsonl_Basic_receive**: Both not-implemented
+- **Type_Array_Int32Value_get**: Both pass
+- **Type_Array_Int32Value_put**: Both pass
+- **Type_Array_Int64Value_get**: Both pass
+- **Type_Array_Int64Value_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Array_BooleanValue_get**: Both pass
+- **Type_Array_BooleanValue_put**: Both pass
+- **Type_Array_StringValue_get**: Both pass
+- **Type_Array_StringValue_put**: Both pass
+- **Type_Array_Float32Value_get**: Both pass
+- **Type_Array_Float32Value_put**: Both pass
+- **Type_Array_DatetimeValue_get**: Both pass
+- **Type_Array_DatetimeValue_put**: Both pass
+- **Type_Array_DurationValue_get**: Both pass
+- **Type_Array_DurationValue_put**: Both pass
+- **Type_Array_UnknownValue_get**: Both pass
+- **Type_Array_UnknownValue_put**: Both pass
+- **Type_Array_ModelValue_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Array_ModelValue_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Array_NullableFloatValue_get**: Both pass
+- **Type_Array_NullableFloatValue_put**: Both pass
+- **Type_Array_NullableBooleanValue_get**: Both pass
+- **Type_Array_NullableBooleanValue_put**: Both pass
+- **Type_Array_NullableInt32Value_get**: Both pass
+- **Type_Array_NullableInt32Value_put**: Both pass
+- **Type_Array_NullableStringValue_get**: Both pass
+- **Type_Array_NullableStringValue_put**: Both pass
+- **Type_Array_NullableModelValue_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Array_NullableModelValue_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Dictionary_Int32Value_get**: Both pass
+- **Type_Dictionary_Int32Value_put**: Both pass
+- **Type_Dictionary_Int64Value_get**: Both pass
+- **Type_Dictionary_Int64Value_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Dictionary_BooleanValue_get**: Both pass
+- **Type_Dictionary_BooleanValue_put**: Both pass
+- **Type_Dictionary_StringValue_get**: Both pass
+- **Type_Dictionary_StringValue_put**: Both pass
+- **Type_Dictionary_Float32Value_get**: Both pass
+- **Type_Dictionary_Float32Value_put**: Both pass
+- **Type_Dictionary_DatetimeValue_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Dictionary_DatetimeValue_put**: Both pass
+- **Type_Dictionary_DurationValue_get**: Both pass
+- **Type_Dictionary_DurationValue_put**: Both pass
+- **Type_Dictionary_UnknownValue_get**: Both pass
+- **Type_Dictionary_UnknownValue_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Dictionary_ModelValue_get**: Both pass
+- **Type_Dictionary_ModelValue_put**: Both pass
+- **Type_Dictionary_RecursiveModelValue_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Dictionary_RecursiveModelValue_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Dictionary_NullableFloatValue_get**: Both pass
+- **Type_Dictionary_NullableFloatValue_put**: Both pass
+- **Type_Scalar_String_get**: Both pass
+- **Type_Scalar_String_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Scalar_Boolean_get**: Both pass
+- **Type_Scalar_Boolean_put**: Both pass
+- **Type_Scalar_Unknown_get**: Both pass
+- **Type_Scalar_Unknown_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Scalar_DecimalType_responseBody**: Both pass
+- **Type_Scalar_Decimal128Type_responseBody**: Both pass
+- **Type_Scalar_DecimalType_requestBody**: Both pass
+- **Type_Scalar_Decimal128Type_requestBody**: Both pass
+- **Type_Scalar_DecimalType_requestParameter**: Both pass
+- **Type_Scalar_Decimal128Type_requestParameter**: Both pass
+- **Type_Scalar_DecimalVerify_prepareVerify**: Both pass
+- **Type_Scalar_Decimal128Verify_prepareVerify**: Both pass
+- **Type_Scalar_DecimalVerify_verify**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Scalar_Decimal128Verify_verify**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Union_StringsOnly_get**: Both pass
+- **Type_Union_StringsOnly_send**: Both pass
+- **Type_Union_StringExtensible_get**: Both pass
+- **Type_Union_StringExtensible_send**: Both pass
+- **Type_Union_StringExtensibleNamed_get**: Both pass
+- **Type_Union_StringExtensibleNamed_send**: Both pass
+- **Type_Union_IntsOnly_get**: Both pass
+- **Type_Union_IntsOnly_send**: Both pass
+- **Type_Union_FloatsOnly_get**: Both pass
+- **Type_Union_FloatsOnly_send**: Both pass
+- **Type_Union_ModelsOnly_get**: Both pass
+- **Type_Union_ModelsOnly_send**: Both pass
+- **Type_Union_EnumsOnly_get**: Both pass
+- **Type_Union_EnumsOnly_send**: Both pass
+- **Type_Union_StringAndArray_get**: Both pass
+- **Type_Union_StringAndArray_send**: Both pass
+- **Type_Union_MixedLiterals_get**: Both pass
+- **Type_Union_MixedLiterals_send**: Both pass
+- **Type_Union_MixedTypes_get**: Both pass
+- **Type_Union_MixedTypes_send**: Both pass
+- **Versioning_Added_v1**: `autorest.json` pass, `efv2.json` not-implemented
+- **Versioning_Added_v2**: Both pass
+- **Versioning_Added_InterfaceV2**: Both pass
+- **Versioning_MadeOptional_test**: Both pass
+- **Versioning_Removed_v2**: Both pass
+- **Versioning_Removed_modelV3**: Both pass
+- **Versioning_Removed_modelV3_V2**: Both pass
+- **Versioning_Removed_modelV3_V2preview**: `autorest.json` pass, `efv2.json` not-implemented
+- **Versioning_RenamedFrom_newOp**: Both pass
+- **Versioning_RenamedFrom_NewInterface**: Both pass
+- **Versioning_ReturnTypeChangedFrom_test**: `autorest.json` pass, `efv2.json` not-implemented
+- **Versioning_TypeChangedFrom_test**: Both pass
+- **Authentication_Http_Custom_valid**: `autorest.json` pass, `efv2.json` not-implemented
+- **Authentication_Http_Custom_invalid**: `autorest.json` pass, `efv2.json` not-implemented
+- **Serialization_EncodedName_Json_Property_send**: Both pass
+- **Serialization_EncodedName_Json_Property_get**: Both pass
+- **Server_Endpoint_NotDefined_valid**: Both pass
+- **Server_Path_Multiple_noOperationParams**: Both pass
+- **Server_Path_Multiple_withOperationPathParam**: Both pass
+- **Server_Path_Single_myOp**: Both pass
+- **Server_Versions_NotVersioned_withoutApiVersion**: Both pass
+- **Server_Versions_NotVersioned_withPathApiVersion**: Both pass
+- **Server_Versions_NotVersioned_withQueryApiVersion**: `autorest.json` pass, `efv2.json` not-implemented
+- **Server_Versions_Versioned_withoutApiVersion**: Both pass
+- **Server_Versions_Versioned_withPathApiVersion**: Both pass
+- **Server_Versions_Versioned_withQueryOldApiVersion**: `autorest.json` pass, `efv2.json` not-implemented
+- **Server_Versions_Versioned_withQueryApiVersion**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Enum_Extensible_String_getKnownValue**: Both pass
+- **Type_Enum_Extensible_String_putKnownValue**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Enum_Extensible_String_getUnknownValue**: Both pass
+- **Type_Enum_Extensible_String_putUnknownValue**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Enum_Fixed_String_getKnownValue**: Both pass
+- **Type_Enum_Fixed_String_putKnownValue**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Enum_Fixed_String_putUnknownValue**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Model_Empty_putEmpty**: Both pass
+- **Type_Model_Empty_getEmpty**: Both pass
+- **Type_Model_Empty_postRoundTripEmpty**: Both pass
+- **Type_Model_Usage_input**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Model_Usage_output**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Model_Usage_inputAndOutput**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Model_Visibility_putReadOnlyModel**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Model_Visibility_headModel**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Model_Visibility_getModel**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Model_Visibility_putModel**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Model_Visibility_patchModel**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Model_Visibility_postModel**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Model_Visibility_deleteModel**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsUnknown_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsUnknown_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsUnknownDerived_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsUnknownDerived_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsUnknownDiscriminated_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsUnknownDiscriminated_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_IsUnknown_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_IsUnknown_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_IsUnknownDerived_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_IsUnknownDerived_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_IsUnknownDiscriminated_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_IsUnknownDiscriminated_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsString_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsString_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_IsString_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_IsString_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsFloat_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsFloat_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_IsFloat_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_IsFloat_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsModel_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsModel_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_IsModel_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_IsModel_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsModelArray_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsModelArray_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_IsModelArray_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_IsModelArray_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadString_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadString_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadFloat_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadFloat_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadModel_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadModel_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadModelArray_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadModelArray_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadDifferentString_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadDifferentString_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadDifferentFloat_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadDifferentFloat_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadDifferentModel_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadDifferentModel_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadDifferentModelArray_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadDifferentModelArray_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsDifferentSpreadString_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsDifferentSpreadString_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsDifferentSpreadFloat_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsDifferentSpreadFloat_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsDifferentSpreadModel_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsDifferentSpreadModel_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsDifferentSpreadModelArray_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_ExtendsDifferentSpreadModelArray_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_MultipleSpread_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_MultipleSpread_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadRecordUnion_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadRecordUnion_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadRecordNonDiscriminatedUnion_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadRecordNonDiscriminatedUnion_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadRecordNonDiscriminatedUnion2_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadRecordNonDiscriminatedUnion2_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadRecordNonDiscriminatedUnion3_get**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_AdditionalProperties_SpreadRecordNonDiscriminatedUnion3_put**: `autorest.json` not-implemented, `efv2.json` pass
+- **Type_Property_Nullable_String_getNonNull**: Both pass
+- **Type_Property_Nullable_String_getNull**: Both pass
+- **Type_Property_Nullable_String_patchNonNull**: Both pass
+- **Type_Property_Nullable_String_patchNull**: Both pass
+- **Type_Property_Nullable_Bytes_getNonNull**: Both pass
+- **Type_Property_Nullable_Bytes_getNull**: Both pass
+- **Type_Property_Nullable_Bytes_patchNonNull**: Both pass
+- **Type_Property_Nullable_Bytes_patchNull**: Both pass
+- **Type_Property_Nullable_Datetime_getNonNull**: Both pass
+- **Type_Property_Nullable_Datetime_getNull**: Both pass
+- **Type_Property_Nullable_Datetime_patchNonNull**: Both pass
+- **Type_Property_Nullable_Datetime_patchNull**: Both pass
+- **Type_Property_Nullable_Duration_getNonNull**: Both pass
+- **Type_Property_Nullable_Duration_getNull**: Both pass
+- **Type_Property_Nullable_Duration_patchNonNull**: Both pass
+- **Type_Property_Nullable_Duration_patchNull**: Both pass
+- **Type_Property_Nullable_CollectionsByte_getNonNull**: Both pass
+- **Type_Property_Nullable_CollectionsByte_getNull**: Both pass
+- **Type_Property_Nullable_CollectionsByte_patchNonNull**: Both pass
+- **Type_Property_Nullable_CollectionsByte_patchNull**: Both pass
+- **Type_Property_Nullable_CollectionsModel_getNonNull**: Both pass
+- **Type_Property_Nullable_CollectionsModel_getNull**: Both pass
+- **Type_Property_Nullable_CollectionsModel_patchNonNull**: Both pass
+- **Type_Property_Nullable_CollectionsModel_patchNull**: Both pass
+- **Type_Property_Nullable_CollectionsString_getNonNull**: Both pass
+- **Type_Property_Nullable_CollectionsString_getNull**: Both pass
+- **Type_Property_Nullable_CollectionsString_patchNonNull**: Both pass
+- **Type_Property_Nullable_CollectionsString_patchNull**: Both pass
+- **Type_Property_Optional_String_getDefault**: Both pass
+- **Type_Property_Optional_String_putDefault**: Both pass
+- **Type_Property_Optional_String_getAll**: Both pass
+- **Type_Property_Optional_String_putAll**: Both pass
+- **Type_Property_Optional_Bytes_getDefault**: Both pass
+- **Type_Property_Optional_Bytes_putDefault**: Both pass
+- **Type_Property_Optional_Bytes_getAll**: Both pass
+- **Type_Property_Optional_Bytes_putAll**: Both pass
+- **Type_Property_Optional_Datetime_getDefault**: Both pass
+- **Type_Property_Optional_Datetime_putDefault**: Both pass
+- **Type_Property_Optional_Datetime_getAll**: Both pass
+- **Type_Property_Optional_Datetime_putAll**: Both pass
+- **Type_Property_Optional_Duration_getDefault**: Both pass
+- **Type_Property_Optional_Duration_putDefault**: Both pass
+- **Type_Property_Optional_Duration_getAll**: Both pass
+- **Type_Property_Optional_Duration_putAll**: Both pass
+- **Type_Property_Optional_PlainDate_getDefault**: Both pass
+- **Type_Property_Optional_PlainDate_putDefault**: Both pass
+- **Type_Property_Optional_PlainDate_getAll**: Both pass
+- **Type_Property_Optional_PlainDate_putAll**: Both pass
+- **Type_Property_Optional_PlainTime_getDefault**: Both pass
+- **Type_Property_Optional_PlainTime_putDefault**: Both pass
+- **Type_Property_Optional_PlainTime_getAll**: Both pass
+- **Type_Property_Optional_PlainTime_putAll**: Both pass
+- **Type_Property_Optional_CollectionsByte_getDefault**: Both pass
+- **Type_Property_Optional_CollectionsByte_putDefault**: Both pass
+- **Type_Property_Optional_CollectionsByte_getAll**: Both pass
+- **Type_Property_Optional_CollectionsByte_putAll**: Both pass
+- **Type_Property_Optional_CollectionsModel_getDefault**: Both pass
+- **Type_Property_Optional_CollectionsModel_putDefault**: Both pass
+- **Type_Property_Optional_CollectionsModel_getAll**: Both pass
+- **Type_Property_Optional_CollectionsModel_putAll**: Both pass
+- **Type_Property_Optional_StringLiteral_getDefault**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_StringLiteral_putDefault**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_StringLiteral_getAll**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_StringLiteral_putAll**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_IntLiteral_getDefault**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_IntLiteral_putDefault**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_IntLiteral_getAll**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_IntLiteral_putAll**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_FloatLiteral_getDefault**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_FloatLiteral_putDefault**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_FloatLiteral_getAll**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_FloatLiteral_putAll**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_BooleanLiteral_getDefault**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_BooleanLiteral_putDefault**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_BooleanLiteral_getAll**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_BooleanLiteral_putAll**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_UnionStringLiteral_getDefault**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_UnionStringLiteral_putDefault**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_UnionStringLiteral_getAll**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_UnionStringLiteral_putAll**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_UnionIntLiteral_getDefault**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_UnionIntLiteral_putDefault**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_UnionIntLiteral_getAll**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_UnionIntLiteral_putAll**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_UnionFloatLiteral_getDefault**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_UnionFloatLiteral_putDefault**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_UnionFloatLiteral_getAll**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_UnionFloatLiteral_putAll**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_Optional_RequiredAndOptional_getRequiredOnly**: Both pass
+- **Type_Property_Optional_RequiredAndOptional_putRequiredOnly**: Both pass
+- **Type_Property_Optional_RequiredAndOptional_getAll**: Both pass
+- **Type_Property_Optional_RequiredAndOptional_putAll**: Both pass
+- **Type_Property_ValueTypes_Boolean_get**: Both pass
+- **Type_Property_ValueTypes_Boolean_put**: Both pass
+- **Type_Property_ValueTypes_String_get**: Both pass
+- **Type_Property_ValueTypes_String_put**: Both pass
+- **Type_Property_ValueTypes_Bytes_get**: Both pass
+- **Type_Property_ValueTypes_Bytes_put**: Both pass
+- **Type_Property_ValueTypes_Int_get**: Both pass
+- **Type_Property_ValueTypes_Int_put**: Both pass
+- **Type_Property_ValueTypes_Float_get**: Both pass
+- **Type_Property_ValueTypes_Float_put**: Both pass
+- **Type_Property_ValueTypes_Decimal_get**: Both pass
+- **Type_Property_ValueTypes_Decimal_put**: Both pass
+- **Type_Property_ValueTypes_Decimal128_get**: Both pass
+- **Type_Property_ValueTypes_Decimal128_put**: Both pass
+- **Type_Property_ValueTypes_Datetime_get**: Both pass
+- **Type_Property_ValueTypes_Datetime_put**: Both pass
+- **Type_Property_ValueTypes_Duration_get**: Both pass
+- **Type_Property_ValueTypes_Duration_put**: Both pass
+- **Type_Property_ValueTypes_Enum_get**: Both pass
+- **Type_Property_ValueTypes_Enum_put**: Both pass
+- **Type_Property_ValueTypes_ExtensibleEnum_get**: Both pass
+- **Type_Property_ValueTypes_ExtensibleEnum_put**: Both pass
+- **Type_Property_ValueTypes_Model_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_Model_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_CollectionsString_get**: Both pass
+- **Type_Property_ValueTypes_CollectionsString_put**: Both pass
+- **Type_Property_ValueTypes_CollectionsInt_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_CollectionsInt_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_CollectionsModel_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_CollectionsModel_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_DictionaryString_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_DictionaryString_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_Never_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_Never_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnknownString_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnknownString_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnknownInt_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnknownInt_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnknownDict_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnknownDict_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnknownArray_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnknownArray_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_StringLiteral_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_StringLiteral_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_IntLiteral_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_IntLiteral_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_FloatLiteral_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_FloatLiteral_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_BooleanLiteral_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_BooleanLiteral_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnionStringLiteral_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnionStringLiteral_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnionIntLiteral_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnionIntLiteral_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnionFloatLiteral_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnionFloatLiteral_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnionEnumValue_get**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Property_ValueTypes_UnionEnumValue_put**: `autorest.json` pass, `efv2.json` not-implemented
+- **Type_Model_Inheritance_EnumDiscriminator_getExtensibleModel**: Both pass
+- **Type_Model_Inheritance_EnumDiscriminator_putExtensibleModel**: Both pass
+- **Type_Model_Inheritance_EnumDiscriminator_getFixedModel**: Both pass
+- **Type_Model_Inheritance_EnumDiscriminator_putFixedModel**: Both pass
+- **Type_Model_Inheritance_EnumDiscriminator_getExtensibleModelMissingDiscriminator**: Both pass
+- **Type_Model_Inheritance_EnumDiscriminator_getExtensibleModelWrongDiscriminator**: Both pass
+- **Type_Model_Inheritance_EnumDiscriminator_getFixedModelMissingDiscriminator**: Both pass
+- **Type_Model_Inheritance_EnumDiscriminator_getFixedModelWrongDiscriminator**: Both pass
+- **Type_Model_Inheritance_NestedDiscriminator_getModel**: Both pass
+- **Type_Model_Inheritance_NestedDiscriminator_putModel**: Both pass
+- **Type_Model_Inheritance_NestedDiscriminator_getRecursiveModel**: Both pass
+- **Type_Model_Inheritance_NestedDiscriminator_putRecursiveModel**: Both pass
+- **Type_Model_Inheritance_NestedDiscriminator_getMissingDiscriminator**: Both pass
+- **Type_Model_Inheritance_NestedDiscriminator_getWrongDiscriminator**: Both pass
+- **Type_Model_Inheritance_NotDiscriminated_postValid**: Both pass
+- **Type_Model_Inheritance_NotDiscriminated_getValid**: Both pass
+- **Type_Model_Inheritance_NotDiscriminated_putValid**: Both pass
+- **Type_Model_Inheritance_Recursive_put**: Both pass
+- **Type_Model_Inheritance_Recursive_get**: Both pass
+- **Type_Model_Inheritance_SingleDiscriminator_getModel**: Both pass
+- **Type_Model_Inheritance_SingleDiscriminator_putModel**: Both pass
+- **Type_Model_Inheritance_SingleDiscriminator_getRecursiveModel**: Both pass
+- **Type_Model_Inheritance_SingleDiscriminator_putRecursiveModel**: Both pass
+- **Type_Model_Inheritance_SingleDiscriminator_getMissingDiscriminator**: Both pass
+- **Type_Model_Inheritance_SingleDiscriminator_getWrongDiscriminator**: Both pass
+- **Type_Model_Inheritance_SingleDiscriminator_getLegacyModel**: Both pass
